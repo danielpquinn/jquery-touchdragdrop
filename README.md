@@ -18,7 +18,7 @@ A simple touch friendly drag and drop jQuery plugin.
 </div>
 ```
 
-## Javascript
+## JavaScript
 
 ```javascript
 $('.item').touchdragdrop();
