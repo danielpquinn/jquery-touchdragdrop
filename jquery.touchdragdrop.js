@@ -18,14 +18,15 @@
         // Cache dom queries
         $targets = $(settings.dropTarget),
         $siblings = $(settings.dropTarget).children(),
-        $dragged,
-        // Create arrays to hold positions
+        $dragged = {},
+        // Arrays to hold positions
         targetPositions = [],
         siblingPositions = [],
+        // Stolen from Modernizr
         touch = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch ? true : false;
 
       // On touchmove
-      $(document).bind(touch ? 'touchmove' : 'mousemove', function (e) {
+      $(document).on(touch ? 'touchmove' : 'mousemove', function (e) {
         if (!dragging) {
           return;
         }

@@ -1,0 +1,21 @@
+.drop {
+  float: left;
+  margin-right: 10px;
+}
+
+.item {
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.item.blue {
+  background-color: blue;
+}
+
+.item.orange {
+  background-color: orange;
+}
+
+.item.clone {
+  opacity: 0.8;
+}
